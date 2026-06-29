@@ -32,15 +32,43 @@ Connection Manager:
 
 ## Diagnostic Commands Used
 
+### NetworkManager Device Information
+
 ```bash
 nmcli dev show wlan0
-iw dev wlan0 get power_save
-ip addr
-ip route
-cat /etc/resolv.conf
-journalctl
-ping google.com
 ```
+
+![NetworkManager Device Information](../screenshots/nmcli-dev-show-wlan0.png)
+
+---
+
+### Routing Table
+
+```bash
+ip route
+```
+
+![Routing Table](../screenshots/ip-route.png)
+
+---
+
+### DNS Configuration
+
+```bash
+cat /etc/resolv.conf
+```
+
+![DNS Configuration](../screenshots/resolv-conf.png)
+
+---
+
+### Wi-Fi Power Saving
+
+```bash
+iw dev wlan0 get power_save
+```
+
+![Wi-Fi Power Save](../screenshots/wifi-power-save.png)
 
 ---
 
